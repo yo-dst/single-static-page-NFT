@@ -33,7 +33,10 @@ const Header = (props) => {
                 <button className="toggle-btn" onClick={e => props.setShow(!props.show)}>
                     <FontAwesomeIcon icon={props.show ? faTimes : faBars} style={{fontSize: "2.5rem", color: "#202020"}} />
                 </button>
-                <img src={logo} alt="logo" className="logo" height="100%" />
+                <div className="logo-wrapper">
+                    <img src={logo} alt="logo" className="logo" height="100%" />
+                </div>
+                
                 <Navbar navItems={props.navItems} navigate={props.navigate} />
                 <button className="btn-connect" onClick={e => console.log("Connect")}>CONNECT</button>
                 <button className="btn-connect-mobile" onClick={e => console.log("Connect")}>

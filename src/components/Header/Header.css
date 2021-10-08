@@ -19,6 +19,12 @@
     height: 100px;
 }
 
+.logo-wrapper {
+    width: 200px;
+    height: 100%;
+    max-width: 17vw;
+}
+
 .toggle-btn {
     display: none;
 }
@@ -57,7 +63,9 @@
 }
 
 .btn-connect {
-    padding: 15px 35px;
+    width: 200px;
+    max-width: 17vw;
+    height: 60%;
     border-radius: 50px;
     border: transparent;
     background-color: #009E12;
