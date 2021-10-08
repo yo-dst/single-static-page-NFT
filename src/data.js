@@ -129,7 +129,7 @@ export const AboutContent = {
 
 export const GalleryContent = {
     nbImgsMobile: 8, // has to be multiple of 2 or go modify Gallery.css .gallery-img class
-    nbImgsDesktop: 16, // do not put a number equal to the number total of imgs you have ; has to be multiple of 4 or go modify Gallery.css .gallery-img class
+    nbImgsDesktop: 12, // do not put a number equal to the number total of imgs you have ; has to be multiple of 4 or go modify Gallery.css .gallery-img class
     frequenceSwitch: 2000,  // it is in ms
     imgs: [
         nft1,
