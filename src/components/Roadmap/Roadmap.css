@@ -1,0 +1,90 @@
+#section-roadmap {
+    background-color: #ffffff;
+  /*  background-color: rgb(181, 214, 247);*/
+    width: 100%;
+    padding: 75px 7vw 100px 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-roadmap-title {
+    font-family : 'Bowlby One SC', cursive;
+    font-size: 3em;
+    margin-bottom: -20px;
+}
+
+.section-roadmap-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    width: 100%;
+}
+
+.section-roadmap-block-img-left {
+    width: 600px;
+    max-width: 90vw;
+    margin-right: 40px;
+    order: 0;
+}
+
+.section-roadmap-block-img-right {
+    width: 600px;
+    max-width: 90vw;
+    order: 2;
+    margin-left: 40px;
+}
+
+.section-roadmap-block-txt {
+    font-family : 'Bowlby One SC', cursive;
+}
+
+.section-roadmap-block-txt-title {
+    color: #009E12;
+    font-size: 2rem;
+}
+
+.section-roadmap-block-txt-txt {
+    color: #101010;
+    font-size: 1.3rem;
+    word-spacing: 4px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 1199px) {
+    .section-roadmap-title {
+        margin-bottom: 0px;
+    }
+
+    .section-roadmap-block {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .section-roadmap-block-img-left {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .section-roadmap-block-img-right {
+        order: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .section-roadmap-block-txt-title {
+        display: none;
+    }
+
+    .section-roadmap-block-txt {
+        width: 500px;
+        max-width: 90vw;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-roadmap-block-txt-txt {
+        font-size: 18px;
+    }
+}

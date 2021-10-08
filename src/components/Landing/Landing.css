@@ -1,0 +1,82 @@
+#section-landing {
+    width: 100%;
+    background-image: url("../../images/bg-landing_1000x3000.png"); /* change background image here */
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 1100px;
+}
+
+.section-landing-content {
+    width: 700px;
+    max-width: 80vw;
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-landing-content-img {
+    width: 600px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.section-landing-btn-undertxt {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Bowlby One SC', cursive;
+    text-align: center;
+}
+
+.section-landing-countdown {
+    margin-top: 50px;
+    background: rgb(0,158,18);
+    background: linear-gradient(0deg, rgba(0,158,18,1) 0%, rgba(0,107,12,1) 100%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family : 'Bowlby One SC', cursive;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 30px;
+    transition: transform 0.5s;
+    max-width: 80vw;
+    box-shadow: 0px 8px 15px #202020;
+}
+
+.section-landing-countdown:hover {
+    transform: rotateZ(2deg);
+}
+
+.section-landing-countdown-timer {
+    margin-top: 30px;
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+}
+
+.section-landing-countdown-txt {
+    margin-top: 20px;
+    font-family : 'Bowlby One SC', cursive;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+    #section-landing {
+        min-height: 800px;;
+    }
+    .section-landing-content {
+        top: 150px;
+    }
+    .section-landing-countdown-timer {
+        font-size: 1.6rem;
+        
+    }
+}

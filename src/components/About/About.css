@@ -1,0 +1,136 @@
+#section-about {
+    background-color: #E1F9F6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 0px 150px 0px;
+    color: #202020;
+}
+
+.section-about-title {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 4em;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+.section-about-block-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1020px;
+    max-width: 90vw;
+}
+
+.section-about-block {
+    margin-top: 70px;
+    font-family: 'Gentium Book Basic', serif;
+    word-spacing: 4px;
+    font-size: 1.6em;
+    font-style: italic ;
+}
+
+.section-about-block-sided {
+    display: flex;
+    align-items: center;
+}
+
+.section-about-block-sided-img {
+    width: 550px;
+    margin-right: 45px;
+}
+
+.section-about-block-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-about-block-column-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.section-about-block-column-txt {
+    padding: 0px 10px;
+}
+
+.section-about-block p::first-letter {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section-about-btn {
+    position: relative;
+    top: 40px;
+    border: 0px;
+    font-family : 'Bowlby One SC', cursive;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 40px;
+    font-size: 20px;
+    box-shadow: 0px 0px 2px black;
+    transition: top 0.4s;
+}
+
+.section-about-btn:hover {
+    color: white;
+    top: 45px;
+    filter: brightness(110%);
+}
+
+.section-about-btn-close {
+    background-color: #d82929;
+    text-decoration: none;
+}
+
+.section-about-btn-extend {
+    background-color: #009E12;
+}
+
+@media screen and (max-width: 991px) {
+    .section-about-title {
+        margin-bottom: 0px;
+    }
+
+    .section-about-block {
+        margin-top: 30px;
+    }
+
+    .section-about-block-sided {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .section-about-block-sided-img {
+        margin-bottom: 10px;
+        max-width: 75%;
+    }
+
+    .section-about-block-sided-txt {
+        max-width: 75%;
+        padding: 0px 10px;
+    }
+
+    .section-about-btn-close {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #section-about {
+        padding-top: 75px;
+    }
+    .section-about-block {
+        font-size: 21px;
+    }
+
+    .section-about-block-column-txt {
+        padding: 0px;
+    }
+
+    .section-about-btn-close {
+        margin-top: 30px;
+    }
+}

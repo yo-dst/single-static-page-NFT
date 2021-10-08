@@ -1,0 +1,107 @@
+#section-faq {
+    width: 100%;
+    background-color: #E1F9F6;
+    padding: 50px 10vw 100px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.accordion-title {
+    font-family: 'Bowlby One SC', cursive;
+    margin-left: 15px;
+    font-size: 3em;
+    color: #202020;
+}
+
+.section-faq-body {
+    display: flex;
+}
+
+.faq-img {
+    margin-top: 90px;
+    width: 300px;
+    max-width: 25vw;
+}
+
+.faq-content {
+    margin-left: 50px;
+}
+
+.accordion {
+    background-color: transparent;
+}
+
+.accordion-item {
+    background-color: transparent;
+    padding: 25px 15px;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    word-spacing: 3px;
+    
+}
+
+.accordion-item-outer-open:hover .accordion-item-outer-txt {
+    color: #009E12;
+}
+
+.accordion-item-outer-close:hover .accordion-item-outer-txt {
+    color: #f05353;
+}
+
+.accordion-item-outer {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-item-outer-txt {
+    margin-left: 20px;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 1.3rem;
+    color: #202020;
+}
+
+.accordion-item-inner {
+    padding: 20px 5px 0px 15px;
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    align-items: stretch;
+}
+
+.accordion-item-inner-bar {
+    margin-left: 20px;
+    width: 2px;
+    background-color: #f05353;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.accordion-item-inner-txt {
+    margin-left: 15px;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 1rem;
+    color: #606060;
+}
+
+@media screen and (max-width: 767px) {
+    .faq-img {
+        display: none;
+    }
+
+    .faq-content {
+        margin-left: 0;
+    }
+
+    .accordion-title {
+        text-align: center;
+    }
+
+    .accordion-item-inner-txt {
+        font-size: 15px;
+    }
+
+    .accordion-item-outer-txt {
+        font-size: 19px;
+    }
+}

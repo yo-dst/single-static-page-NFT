@@ -1,0 +1,90 @@
+#section-team {
+    width: 100%;
+    background-color: #E1F9F6;
+    padding: 75px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-team-title {
+    font-family: 'Bowlby One SC', cursive;
+    word-spacing: 4px;
+    font-size: 3em;
+    text-align: center;
+    color: #202020;
+}
+
+.team-wrapper {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1220px;
+    max-width: 96vw;
+}
+
+.block-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 25%;
+}
+
+.member-avatar {
+    width: 125px;
+    border-radius: 50%;
+    transition: transform 0.6s;
+}
+
+.member-avatar:hover {
+    transform: scale(1.06);
+}
+
+.member-name {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 1.6em;
+    color: #353BED;
+}
+
+.member-title {
+    position: relative;
+    top: 0px;
+    margin: 0px;
+    transition: top 0.4s;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 1.1em;
+    color: #606060;
+}
+
+@media screen and (max-width: 991px) {
+    #section-team {
+        padding-bottom: 50px;
+    }
+    .team-wrapper {
+        width: 600px;
+    }
+    .block-member {
+        flex: 50%;
+        margin-bottom: 50px;
+    }
+    .section-team {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #section-team {
+        padding-bottom: 25px;
+    }
+    .member-avatar {
+        width: 100px;
+    }
+    .section-team {
+        padding-bottom: 0px;
+    }
+}

@@ -1,0 +1,24 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.app {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+    html, body {
+        font-size: 14px;
+    }
+}
